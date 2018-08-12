@@ -1611,8 +1611,8 @@ Board.default = {
     21:[{x: 3, y: 3}, {x:10, y: 3}, {x:17, y: 3}, {x: 3, y:10}, {x:10, y:10},
         {x:17, y:10}, {x: 3, y:17}, {x:10, y:17}, {x:17, y:17}],
   },
-	//stoneHandler: Board.drawHandlers.SHELL,
-	stoneHandler: Board.drawHandlers.REALISTIC, // New photograph based stones
+	stoneHandler: Board.drawHandlers.SHELL,
+	// stoneHandler: Board.drawHandlers.REALISTIC, // New photograph based stones
 	starSize: 1, // deprecated
 	shadowSize: 1, // deprecated
 	stoneSize: 1, // deprecated
@@ -1623,9 +1623,9 @@ Board.default = {
 		left: 0,
 	},
 
-	//background: WGo.DIR+"wood1.jpg",    // Original version, tileing
+	background: WGo.DIR+"wood1.jpg",    // Original version, tileing
 	//background: WGo.DIR+"wood_512.jpg", // Mobile friendly, low resolution
-	background: WGo.DIR+"wood_1024.jpg",  // High resolution version, use with REALISTIC handler
+	// background: WGo.DIR+"wood_1024.jpg",  // High resolution version, use with REALISTIC handler
 
 	//whiteStoneGraphic: [ WGo.DIR+"white_128.png" ], // Single image only, hires
 	//blackStoneGraphic: [ WGo.DIR+"black_128.png" ], // Single image only, hires

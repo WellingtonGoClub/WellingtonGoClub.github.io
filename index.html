@@ -23,6 +23,7 @@
   <link rel="stylesheet" href="css/skeleton.css">
   <link rel="stylesheet" href="css/custom.css">
   <link rel="stylesheet" href="css/nav.css">
+  <link type="text/css" href="js/wgo/wgo.player.css" rel="stylesheet" />
 
   <!-- Favicon
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
@@ -93,18 +94,10 @@
     </p>
 
     <h3>Example of a Game</h3>
-    <select id="tool" style="display: block; margin-bottom: 10px;">
-      <option value="black" selected>Black stone</option>
-      <option value="white">White stone</option>
-      <option value="SQ">Square</option>
-      <option value="TR">Triangle</option>
-      <option value="CR">Circle</option>
-      <option value="remove">Remove</option>
     </select>
-    <div id="board">
-      <!-- Goban goes here! -->
+    <div data-wgo="sgf/game.sgf" data-wgo-layout="top: ['Control']" style="width: 50%">
+    Your browser doesn't support WGo Player. Use some modern browser like IE9, Google Chrome or Mozilla Firefox.
     </div>
-   
     <h3>The Wellington Go Club</h3>
     <p>
       We are a small but active community based in Wellington and our meetups are run by the <a href="https://www.facebook.com/VicGoClub/" target="_blank">Victoria Go Club</a>. We cater to running games between members and teaching people of any skill level, especially beginners. There is no membership fee to join, and no obligation to turn up every week. For more information about the club, feel free to get touch and we will get back to you as soon as possible.
@@ -173,11 +166,11 @@
     <h3>Club Resources</h3>
       <div class="row">
         <div class="four columns value-prop">
-          <a href="pdfs/Learn_Go_Leaflet.pdf"><img class="value-img" src="images/learngo_leaflet.jpg"></a>
+          <a href="pdf/Learn_Go_Leaflet.pdf"><img class="value-img" src="images/learngo_leaflet.jpg"></a>
           A C-fold leafet on the rules of Go, with extra pages for club advertising. The second page is flipped for long-edge printing.
         </div>
         <div class="four columns value-prop">
-          <a href="pdfs/Learn_Go_Poster.pdf"><img class="value-img" src="images/learngo_poster.jpg"></a>
+          <a href="pdf/Learn_Go_Poster.pdf"><img class="value-img" src="images/learngo_poster.jpg"></a>
           A poster on the history and the rules of Go. Designed for large printing (size A3 and above).
         </div>
         <div class="four columns value-prop">
@@ -247,9 +240,19 @@
   crossorigin="anonymous"></script>
   <script src="js/main.js"></script>
   <!-- Setting up Go board -->
-  <script type="text/javascript" src="js/wgo.js/wgo/wgo.js"></script> <!-- linking WGo javascript -->
-
-
+  <script type="text/javascript" src="js/wgo/wgo.js"></script>
+  <script type="text/javascript" src="js/wgo/kifu.js"></script>
+  <script type="text/javascript" src="js/wgo/sgfparser.js"></script>
+  <script type="text/javascript" src="js/wgo/player.js"></script>
+  <script type="text/javascript" src="js/wgo/basicplayer.js"></script>
+  <script type="text/javascript" src="js/wgo/basicplayer.component.js"></script>
+  <!-- <script type="text/javascript" src="js/wgo/basicplayer.infobox.js"></script> -->
+  <!-- <script type="text/javascript" src="js/wgo/basicplayer.commentbox.js"></script> -->
+  <script type="text/javascript" src="js/wgo/basicplayer.control.js"></script>
+  <!-- <script type="text/javascript" src="js/wgo/player.editable.js"></script> -->
+  <!-- <script type="text/javascript" src="js/wgo/scoremode.js"></script> -->
+  <script type="text/javascript" src="js/wgo/player.permalink.js"></script>
+  
 </body>
 </html>
 
