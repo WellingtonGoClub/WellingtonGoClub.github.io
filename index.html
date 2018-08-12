@@ -26,7 +26,7 @@
 
   <!-- Favicon
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <link rel="icon" type="image/png" href="images/favicon.ico">
+  <link rel="icon" type="image/x-icon" href="images/favicon.ico">
 
 </head>
 <body>
@@ -53,6 +53,7 @@
     <!-- HEADER
     –––––––––––––––––––––––––––––––––––––––––––––––––– -->
     <section class="header">
+      <img src="images/wgc-logo.svg" alt="WGC logo" class="logo-img">
       <h1>Wellington Go Club</h1>
       <div class="subtitle">
         <h4>A friendly space to learn and to play the ancient game of Go.</h4>
@@ -90,6 +91,19 @@
     <p>
       The 19 x 19 board gives an immense number of possibilities for each move. Even with simple rules, its vast complexity made it the last perfect information, zero-sum board game that humans could beat computers. Until 2016 when the AI <a href="https://deepmind.com/research/alphago/" target="_blank">AlphaGo</a>, defeated the top professional, Lee Sedol, in a best of 5 match.
     </p>
+
+    <h3>Example of a Game</h3>
+    <select id="tool" style="display: block; margin-bottom: 10px;">
+      <option value="black" selected>Black stone</option>
+      <option value="white">White stone</option>
+      <option value="SQ">Square</option>
+      <option value="TR">Triangle</option>
+      <option value="CR">Circle</option>
+      <option value="remove">Remove</option>
+    </select>
+    <div id="board">
+      <!-- Goban goes here! -->
+    </div>
    
     <h3>The Wellington Go Club</h3>
     <p>
@@ -138,11 +152,9 @@
     
     <h3>Play online</h3>
     <ul>
-      
       <li><a href="https://www.gokgs.com/" alt="KGS Go Server" target="_blank">KGS Go Server</a>: American based go playing server.</li>
       <li><a href="http://www.tygembaduk.com/" alt="Tygem Go Server" target="_blank">Tygem Go Server</a>: Korean based go playing server.</li>
       <li><a href="http://pandanet-igs.com/communities/pandanet" alt="Internet Go Server" target="_blank">Internet Go Server</a>: Japanese based go playing server. This has a great mobile compatible app for playing go.</li>
-      
     </ul>
     
     <h3>Free books</h3>
@@ -159,11 +171,20 @@
     </ul>
 
     <h3>Club Resources</h3>
-    <ul>
-      <li><a href="pdfs/Learn_Go_Leaflet.pdf">Learn Go - C-fold Leaflet</a></li>
-      <li><a href="pdfs/Learn_Go_Poster.pdf">Learn Go - A2/A3 poster</a></li>
-    </ul>
-
+      <div class="row">
+        <div class="four columns value-prop">
+          <a href="pdfs/Learn_Go_Leaflet.pdf"><img class="value-img" src="images/learngo_leaflet.jpg"></a>
+          A C-fold leafet on the rules of Go, with extra pages for club advertising. The second page is flipped for long-edge printing.
+        </div>
+        <div class="four columns value-prop">
+          <a href="pdfs/Learn_Go_Poster.pdf"><img class="value-img" src="images/learngo_poster.jpg"></a>
+          A poster on the history and the rules of Go. Designed for large printing (size A3 and above).
+        </div>
+        <div class="four columns value-prop">
+          <img class="value-img" src="images/handshake.svg">
+         Placeholder
+        </div>
+      </div>
 
     </div>
 
@@ -225,6 +246,9 @@
   integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
   crossorigin="anonymous"></script>
   <script src="js/main.js"></script>
+  <!-- Setting up Go board -->
+  <script type="text/javascript" src="js/wgo.js/wgo/wgo.js"></script> <!-- linking WGo javascript -->
+
 
 </body>
 </html>

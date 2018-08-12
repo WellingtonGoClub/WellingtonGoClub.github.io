@@ -32,6 +32,7 @@ h3 {
   max-width: 800px;
   margin: 0 auto; }
 .value-prop {
+  text-align: center;
   margin-top: 1rem; }
 .body-header {
   text-transform: uppercase;
@@ -47,6 +48,11 @@ h3 {
   text-align: center;
   margin: 0 auto;
   width: 100px; }
+.logo-img {
+  display: block;
+  text-align: center;
+  margin: 0 auto;
+  width: 150px; }
 
 /* Landscape mobile devices (576px to 767px) */
 @media (min-width: 576px) {
@@ -55,6 +61,8 @@ h3 {
   blockquote {
     font-size: x-large; }
   .value-img {
+    margin-bottom: 1rem; }
+  .logo-img {
     margin-bottom: 1rem; }
   .header {
     margin-top: 10rem;
