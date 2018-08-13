@@ -1230,9 +1230,9 @@ Board.prototype = {
 		this.shadow = new Board.ShadowLayer(this, theme_variable("shadowSize", this));
 		this.stone = new Board.MultipleCanvasLayer();
 
-		this.addLayer(this.grid, 100);
-		this.addLayer(this.shadow, 200);
-		this.addLayer(this.stone, 300);
+		this.addLayer(this.grid, 10);
+		this.addLayer(this.shadow, 20);
+		this.addLayer(this.stone, 30);
 	},
 
 	/**
