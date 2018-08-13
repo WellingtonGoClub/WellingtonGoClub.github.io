@@ -38,6 +38,13 @@
 	-webkit-tap-highlight-color: transparent; /* For some Androids */
 }
 
+/* Landscape mobile devices (576px to 767px) */
+@media (min-width: 576px) {
+	.wgo-player-main {
+		width: 400px;
+	}
+}
+
 .wgo-player-main:after {
 	content: "";
 	clear: both;
