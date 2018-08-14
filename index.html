@@ -94,15 +94,16 @@
     </p>
 
     <h3>Example of a Game</h3>
-    <div data-wgo="sgf/20160313-AlphaGo-vs-Lee-Sedol.sgf" data-wgo-layout="top: ['Control']" data-wgo-move="40">
-    Error: Your browser doesn't support WGo Player. Use some modern browser like IE9, Google Chrome or Mozilla Firefox.
+    <div data-wgo="sgf/20160313-AlphaGo-vs-Lee-Sedol.sgf" data-wgo-enablewheel="false" data-wgo-layout="top: ['Control']" data-wgo-move="50">
+    Error: Your browser doesn't support WGo Player. To see the game, please use a modern browser like: IE9, Google Chrome or Mozilla Firefox.
     </div>
     <p class="footer">
       <br>Google DeepMind Challenge Match: AlphaGo (Black) vs Lee Sedol (White) - Match 4
+      <br>The last game ever that a human player beat the top computer in Go.
     </p>
     <h3>The Wellington Go Club</h3>
     <p>
-      We are a small but active community based in Wellington and our meetups are run by the <a href="https://www.facebook.com/VicGoClub/" target="_blank">Victoria Go Club</a>. We cater to running games between members and teaching people of any skill level, especially beginners. There is no membership fee to join, and no obligation to turn up every week. For more information about the club, feel free to get touch and we will get back to you as soon as possible.
+      We are a small but active community based in Wellington who cater to running games between members and teaching people of any skill level, especially beginners. There is no membership fee to join, and no obligation to turn up every week. For more information about the club, feel free to get touch and we will get back to you as soon as possible.
     </p>
     </div>
 
@@ -119,19 +120,26 @@
           The Wellington Go Club meets on <strong>Tuesdays at 5:30pm till late</strong>, at the <a href="https://goo.gl/maps/u2FtxxKKvRU2" target="_blank">Victoria University of Wellington, Room 350 in the Cotton Building</a>. The staff parking becomes free after 5pm and there is a bus stop nearby on Kelburn Parade. 
         </p>
         <p>
-          Our regular meetups include going through tsumego (go problems), the occasional lecture, and, of course, playing lots of games. We have a wide range of skilled players and there's always someone who is happy to help beginners learn the game.
+          Our regular meet-ups include going through tsumego (Go problems), the occasional lecture, and of course, playing lots of games. We have a wide range of skilled players and there's always someone who is happy to help beginners learn the game.
         </p>
       </div>
       <div class="one-half column">
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2997.8618188473056!2d174.76608620124446!3d-41.29011172917139!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6d38b028d55b86d9%3A0xae56bb73c9d994bd!2sCotton+Building%2C+Kelburn%2C+Wellington+6012!5e0!3m2!1sen!2snz!4v1523958986608" width="100%" height="300" frameborder="0" style="border:0" allowfullscreen class="mb"></iframe>
       </div>
     </div>
-    <p>
-        Over the summer, we run a <strong>Stones in the Park</strong> event at the Botanic Gardens. This is a casual get-together to play some Go and to enjoy the sunshine.
-    </p>
-    <p>
-      We occasionally run lectures from experienced players and visiting guests, which help improve everyone's skills. If you are interested in coming along and giving a lecture, don't hesitate to <a href="#contact">get in touch</a>.
-    </p>
+    <div class="row">
+      <div class="one-half column">
+        <img src="images/club_photo.jpg" alt="The Club" class="u-full-width mb">
+      </div>
+      <div class="one-half column">
+        <p>
+            Over the summer, we run a <strong>Stones in the Park</strong> event at the Botanic Gardens. This is a casual get-together to play some Go and to enjoy the sunshine.
+        </p>
+        <p>
+          We occasionally run lectures from experienced players and visiting guests, which help improve everyone's skills. If you are interested in coming along and giving a lecture, don't hesitate to <a href="#contact">get in touch</a>.
+        </p>
+      </div>
+    </div>
     </div>
 
 
@@ -142,14 +150,14 @@
     <h2 class="body-header" id="resources">Online Resources</h2>
 
     <h3 id="beginners">Lean to play</h3>
-      <li><a href="https://online-go.com/learn-to-play-go" alt="Online Go Server" target="_blank">Online Go Server</a>: Popular American website for playing go online. Includes a great tutorial for beginners.</li>
+      <li><a href="https://online-go.com/learn-to-play-go" alt="Online Go Server" target="_blank">Online Go Server</a>: Popular American website for playing Go online. Includes a great tutorial for beginners.</li>
       <li><a href="http://www.goproblems.com/" alt="Go Problems Website" target="_blank">Go Problems</a>: A free database of tsumego (Go problems) for all levels of players to sharpen their skills.</li>
     
     <h3>Play online</h3>
     <ul>
-      <li><a href="https://www.gokgs.com/" alt="KGS Go Server" target="_blank">KGS Go Server</a>: American based go playing server.</li>
-      <li><a href="http://www.tygembaduk.com/" alt="Tygem Go Server" target="_blank">Tygem Go Server</a>: Korean based go playing server.</li>
-      <li><a href="http://pandanet-igs.com/communities/pandanet" alt="Internet Go Server" target="_blank">Internet Go Server</a>: Japanese based go playing server. This has a great mobile compatible app for playing go.</li>
+      <li><a href="https://www.gokgs.com/" alt="KGS Go Server" target="_blank">KGS Go Server</a>: American-based Go server. Once the most popular English Go server but is now declining in popularity.</li>
+      <li><a href="http://www.tygembaduk.com/" alt="Tygem Go Server" target="_blank">Tygem Go Server</a>: Korean-based Go server, infamous for users with an aggressive style of play.</li>
+      <li><a href="http://pandanet-igs.com/communities/pandanet" alt="Internet Go Server" target="_blank">Internet Go Server</a>: Japanese-based Go server. This has a great mobile compatible app for playing Go.</li>
     </ul>
     
     <h3>Free books</h3>
@@ -248,11 +256,7 @@
   <script type="text/javascript" src="js/wgo/player.js"></script>
   <script type="text/javascript" src="js/wgo/basicplayer.js"></script>
   <script type="text/javascript" src="js/wgo/basicplayer.component.js"></script>
-  <!-- <script type="text/javascript" src="js/wgo/basicplayer.infobox.js"></script> -->
-  <!-- <script type="text/javascript" src="js/wgo/basicplayer.commentbox.js"></script> -->
   <script type="text/javascript" src="js/wgo/basicplayer.control.js"></script>
-  <!-- <script type="text/javascript" src="js/wgo/player.editable.js"></script> -->
-  <!-- <script type="text/javascript" src="js/wgo/scoremode.js"></script> -->
   <script type="text/javascript" src="js/wgo/player.permalink.js"></script>
   
 </body>
