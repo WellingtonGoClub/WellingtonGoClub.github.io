@@ -48,10 +48,18 @@ h3 {
   text-align: center;
   margin: 0 auto;
   width: 100px; }
+.preview-img {
+  display: block;
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  width: 100px; }
 .logo-img {
   display: block;
   text-align: center;
   margin: 0 auto;
+  margin-bottom: 1rem;
   width: 150px; }
 
 /* Landscape mobile devices (576px to 767px) */
@@ -61,8 +69,6 @@ h3 {
   blockquote {
     font-size: x-large; }
   .value-img {
-    margin-bottom: 1rem; }
-  .logo-img {
     margin-bottom: 1rem; }
   .header {
     margin-top: 10rem;
