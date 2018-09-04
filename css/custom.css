@@ -54,7 +54,8 @@ h3 {
   margin: 0 auto;
   margin-top: 1rem;
   margin-bottom: 1rem;
-  width: 100px; }
+  max-width: 150px;
+  max-height: 150px; }
 .logo-img {
   display: block;
   text-align: center;
