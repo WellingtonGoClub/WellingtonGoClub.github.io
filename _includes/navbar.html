@@ -1,0 +1,35 @@
+<!-- Navagation bar (Bulma) -->
+<nav class="navbar" role="navigation" aria-label="main navigation">
+  <div class="navbar-brand">
+    <a class="navbar-item" href="{{ site.baseurl }}/">
+      <strong>WGC</strong>
+    </a>
+    <div class="navbar-burger" data-target="navMenu" aria-label="menu" aria-expanded="false">
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+    </div>
+  </div>
+  <div id="navMenu" class="navbar-menu">
+    <div class="navbar-start">
+      <a class="navbar-item" href="{{ site.baseurl }}/">Home</a>
+      <a class="navbar-item" href="{{ site.baseurl }}/about">About</a>
+      <a class="navbar-item" href="{{ site.baseurl }}/events">Events</a>
+      <a class="navbar-item" href="{{ site.baseurl }}/resources">Resources</a>
+      <a class="navbar-item" href="{{ site.baseurl }}/contact">Contact</a>
+    </div>
+  </div>
+
+</nav>
+
+<!-- Script to turn burger menu into cross when active -->
+<script type="text/javascript">
+  (function() {
+    var burger = document.querySelector('.navbar-burger');
+    var nav = document.querySelector('#'+burger.dataset.target);
+    burger.addEventListener('click', function(){
+      burger.classList.toggle('is-active');
+      nav.classList.toggle('is-active');
+    });
+  })();
+</script>

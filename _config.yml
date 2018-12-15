@@ -1,0 +1,17 @@
+
+name: Wellington Go Club
+title: Wellington Go Club
+email: contact@wellingtongoclub.nz
+description: >- #
+  The Wellington Go Club is a friendly space for learning and
+  playing the game of go (a.k.a. baduk, weiqi, igo).
+baseurl: ""
+url: "https://welingtongoclub.nz"
+facebook_username: WellingtonGoClub
+github_username: WellingtonGoClub
+
+# gaaccount: 'UA-125318910-1'
+
+# Build settings
+markdown: kramdown
+exclude: ['README.md', 'LICENSE', "*.bak"]

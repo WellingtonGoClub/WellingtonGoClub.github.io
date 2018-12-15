@@ -1,0 +1,28 @@
+@charset "utf-8";
+
+/* Bulma overrides */
+
+@import "bulma.sass";
+
+$navbar-breakpoint: $tablet;
+
+@import "bulma.sass";
+
+
+
+
+body {
+  background-image: url(/assets/images/canvas_bg.jpg);
+}
+
+/* Flexbox solution to the "Sticky footer" problem */
+/* TODO fix, is bugged atm */
+.site {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+
+.site-content {
+  flex: 1;
+}
