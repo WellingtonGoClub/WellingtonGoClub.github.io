@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Head for all HTML pages -->
+<head>
+  <!-- Google Analytics
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <!-- Google analytics -->
+
+  <script>
+    window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+    ga('create', '', 'auto');
+    ga('send', 'pageview');
+  </script>
+  <script async src='https://www.google-analytics.com/analytics.js'></script>
+
+
+
+  <!-- Meta Info
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+    <meta name="description" content="The Wellington Go Club is a friendly space for learning and playing the game of go (a.k.a. baduk, weiqi, igo).">
+  
+  <title>
+    
+      Wellington Go Club
+    
+  </title>
+
+  <!-- Favicon
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="icon" href="/assets/images/favicon.ico">
+
+  <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link href="/assets/css/main.css" rel="stylesheet" type="text/css">
+
+  <!-- Scripts
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  
+  
+</head>
+
+<body class="site">
+  <!-- Navagation bar (Bulma) -->
+<nav class="navbar" role="navigation" aria-label="main navigation">
+  <div class="navbar-brand">
+    <a class="navbar-item" href="/">
+      <strong>WGC</strong>
+    </a>
+    <div class="navbar-burger" data-target="navMenu" aria-label="menu" aria-expanded="false">
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+    </div>
+  </div>
+  <div id="navMenu" class="navbar-menu">
+    <div class="navbar-start">
+      <a class="navbar-item" href="/">Home</a>
+      <a class="navbar-item" href="/about">About</a>
+      <a class="navbar-item" href="/events">Events</a>
+      <a class="navbar-item" href="/resources">Resources</a>
+      <a class="navbar-item" href="/contact">Contact</a>
+    </div>
+  </div>
+
+</nav>
+
+<!-- Script to turn burger menu into cross when active -->
+<script type="text/javascript">
+  (function() {
+    var burger = document.querySelector('.navbar-burger');
+    var nav = document.querySelector('#'+burger.dataset.target);
+    burger.addEventListener('click', function(){
+      burger.classList.toggle('is-active');
+      nav.classList.toggle('is-active');
+    });
+  })();
+</script>
+
+  <main class="site-content">
+    <section class="content">
+      <style type="text/css" media="screen">
+  .container {
+    margin: 10px auto;
+    max-width: 600px;
+    text-align: center;
+  }
+  h1 {
+    margin: 30px 0;
+    font-size: 4em;
+    line-height: 1;
+    letter-spacing: -1px;
+  }
+</style>
+
+<div class="container">
+  <h1>404</h1>
+
+  <p><strong>Page not found :(</strong></p>
+  <p>The requested page could not be found.</p>
+</div>
+
+    </section>
+  </main>
+
+  <!-- Footer -->
+<footer class="footer">
+  <div class="container content">
+    <p>
+      Some footer stuff
+    </p>
+  </div>
+</footer>
+
+</body>
+</html>
